@@ -1,0 +1,2 @@
+cd e:
+cmd /k Lib\NUnit 2.6.3\bin\nunit-console.exe SeShellTest\bin\debugSelenium.Tests.dll /xml=nunit-result.xml

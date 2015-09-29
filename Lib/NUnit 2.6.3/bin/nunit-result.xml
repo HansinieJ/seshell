@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\AutomationFramework\AutomationFramework\SeShellTest\bin\debug\SeShell.Test.dll" total="2" errors="2" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-29" time="11:02:22">
+  <environment nunit-version="2.6.3.13283" clr-version="4.0.30319.34003" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="E:\AutomationFramework\AutomationFramework\Lib\NUnit 2.6.3\bin" machine-name="HANSINIEJ" user="HansinieJ" user-domain="SERANET" />
+  <culture-info current-culture="en-US" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="E:\AutomationFramework\AutomationFramework\SeShellTest\bin\debug\SeShell.Test.dll" executed="True" result="Failure" success="False" time="36.489" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="SeShell" executed="True" result="Failure" success="False" time="36.475" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="36.475" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="TestCases" executed="True" result="Failure" success="False" time="36.474" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="FBLoginTest" executed="True" result="Failure" success="False" time="21.012" asserts="0">
+                    <results>
+                      <test-suite type="ParameterizedTest" name="LoginSuccessfull" executed="True" result="Failure" success="False" time="21.006" asserts="0">
+                        <results>
+                          <test-case name="SeShell.Test.TestCases.FBLoginTest.LoginSuccessfull(SeShell.Test.TestData.Data.FBLoginData)" executed="True" result="Error" success="False" time="21.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.AggregateException : One or more errors occurred.
+  ----> OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/4597bef1-97e7-4ce0-8fe5-68b52c088864/screenshot. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:7055]]></message>
+                              <stack-trace><![CDATA[at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+at System.Threading.Tasks.Task.Wait()
+at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`2 body)
+at SeShell.Test.TestCases.FBLoginTest.LoginSuccessfull(FBLoginData LoginData) in e:\AutomationFramework\AutomationFramework\SeShellTest\TestCases\FBLoginTest.cs:line 27
+--WebDriverException
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+at SeShell.Test.Core.ScreenShotImage.CaptureScreenShot(IWebDriver driver, String imageName) in e:\AutomationFramework\AutomationFramework\SeShellTest\Core\ScreenShotImage.cs:line 23
+at SeShell.Test.TestCases.AbstractTest.HandleException(Exception ex, String screenshotIdentifier, IWebDriver webDriver, ResultReport resultReport, TestCaseAsserts asserts, ResultsWriter writer) in e:\AutomationFramework\AutomationFramework\SeShellTest\TestCases\AbstractTest.cs:line 50
+at SeShell.Test.TestCases.FBLoginTest.<>c__DisplayClass1.<LoginSuccessfull>b__0(IWebDriver driver, ParallelLoopState loopState) in e:\AutomationFramework\AutomationFramework\SeShellTest\TestCases\FBLoginTest.cs:line 52
+at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+at System.Threading.Tasks.Task.<>c__DisplayClass11.<ExecuteSelfReplicating>b__10(Object param0)
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+--SocketException
+at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="FBPostTest" executed="True" result="Failure" success="False" time="15.433" asserts="0">
+                    <results>
+                      <test-suite type="ParameterizedTest" name="TweetPostSuccessfull" executed="True" result="Failure" success="False" time="15.432" asserts="0">
+                        <results>
+                          <test-case name="SeShell.Test.TestCases.FBPostTest.TweetPostSuccessfull(SeShell.Test.TestData.Data.FBPostData)" executed="True" result="Error" success="False" time="15.432" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.AggregateException : One or more errors occurred.
+  ----> OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:7055/hub/session/ca17102f-53fa-4d28-b876-b37335df8384/screenshot. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:7055]]></message>
+                              <stack-trace><![CDATA[at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+at System.Threading.Tasks.Task.Wait()
+at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`2 body)
+at SeShell.Test.TestCases.FBPostTest.TweetPostSuccessfull(FBPostData TData) in e:\AutomationFramework\AutomationFramework\SeShellTest\TestCases\FBPostTest.cs:line 27
+--WebDriverException
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+at SeShell.Test.Core.ScreenShotImage.CaptureScreenShot(IWebDriver driver, String imageName) in e:\AutomationFramework\AutomationFramework\SeShellTest\Core\ScreenShotImage.cs:line 23
+at SeShell.Test.TestCases.AbstractTest.HandleException(Exception ex, String screenshotIdentifier, IWebDriver webDriver, ResultReport resultReport, TestCaseAsserts asserts, ResultsWriter writer) in e:\AutomationFramework\AutomationFramework\SeShellTest\TestCases\AbstractTest.cs:line 50
+at SeShell.Test.TestCases.FBPostTest.<>c__DisplayClass4.<TweetPostSuccessfull>b__3(IWebDriver driver, ParallelLoopState loopState) in e:\AutomationFramework\AutomationFramework\SeShellTest\TestCases\FBPostTest.cs:line 64
+at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+at System.Threading.Tasks.Task.<>c__DisplayClass11.<ExecuteSelfReplicating>b__10(Object param0)
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+--SocketException
+at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestSuite" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
